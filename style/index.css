@@ -15,7 +15,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	outline: 0;
 	padding: 0;
 	margin: 0;
-	/* border: 0; */
+	border: 0;
 	}
 /* remember to define focus styles! */
 :focus {
@@ -56,7 +56,7 @@ blockquote, q {
     padding:0;
     margin: 0;
     max-width: 100%;
-    border: 2px dashed grey;
+    /* border: 1px solid grey; */
 }
 
 html{
@@ -224,3 +224,15 @@ footer button{
 footer button:hover{
 	background-color: green;
 }
+@media (max-width: 800px) {
+	.bio-container {
+	  background: rgb(189, 189, 146);
+	}
+  }
+
+  @media (max-width: 500px) {
+	.bio-container {
+	  background: rgb(124, 124, 64);
+	  color: bisque;
+	}
+  }
