@@ -56,12 +56,14 @@ blockquote, q {
     padding:0;
     margin: 0;
     max-width: 100%;
-    /* border: 1px solid grey; */
+    /* border: 3px dashed black; */
 }
 
+/* note 1rem = 10px using 62.5% makes math and scalability easier. */
 html{
     font-size: 62.5%;
 }
+
 body{
     font-size: 1.6rem;
     line-height: 1.5;
@@ -75,11 +77,15 @@ section{
     width: 90%;
     margin: 0 auto;
 }
+h1, h2, h3{
+	/* letter-spacing: 3px; */
+}
 h1{
     font-family: 'Chelsea Market', cursive;
     font-size: 6rem;
 	color: White;
 	padding-left: 2%;
+	
 }
 /* Header Styles */
 h2{
@@ -133,7 +139,6 @@ img{
 }
 .bio-container a{
 	border-radius: 10%;
-	background-color: rgb(241, 60, 14);
 	border-style: solid;
 	border-color: green;
 	border-width: 1px;
@@ -143,7 +148,10 @@ img{
 .bio-container a:hover{
 	background-color: green;
 	color: white;
+}
 
+#project-link{
+	background-color: rgb(241, 60, 14);
 }
 
 /* section id="Projects" General Styles */
@@ -160,7 +168,7 @@ img{
 }
 
 #projects:hover{
-    border: 5px solid green;
+    border: 5px solid #005057;
 }
 /* #projects img{
 	size
@@ -168,9 +176,8 @@ img{
 #projects button{
 		color: white;
 		background-color:#BB2026;
-		font-size: 101%;
-		padding: 3%;
-		margin: 2%;
+		font-size: 100%;
+		margin: 3%;
 		height: auto;
 		border-radius: 10%;
 }
@@ -179,31 +186,24 @@ img{
 }
 
 /* alternating backgrounds in id="projects" Styles*/
-.grey-background-1 {
-    background-color: rgb(190, 192, 194);
+
+.card {
     margin: 1%;
     box-shadow: 3px 3px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+	text-align: center;
     
 }
-.grey-background-1:hover{
+.card:hover{
     border: 3px solid black;
 }
 
-.grey-alternate {
-    margin: 1%;
-    box-shadow: 3px 3px 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-	align-items: center;
+ .card.grey{
+	background-color: rgb(190, 192, 194);
 }
 
-.grey-alternate:hover{
-    border: 3px solid black;
-}
 /* Footer Styles */
 footer{
 	background-color:#444c55;
@@ -215,24 +215,61 @@ footer{
 footer h3{
 	font-size: 110%;
 	color: White;
+	margin-top: 1%;
 }
 
 footer button{
 	font-size: 100%;
 	padding: 1% 2%;
+	margin: 1%;
 }
 footer button:hover{
 	background-color: green;
 }
+/* Responsive Styles */
+/* max-width scales down - desktop first */
 @media (max-width: 800px) {
 	.bio-container {
 	  background: rgb(189, 189, 146);
+	  background-color: #E0E1E3;
+	}
+	.container{
+		display: flex;
+	}
+	.card{
+		width: 50%;
+		display: flex;
+		
 	}
   }
 
   @media (max-width: 500px) {
+	#veryTop{
+		background-color: #3A5743;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	nav{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 120%;
+	}
+	h1{
+		font-size: 3rem;
+		text-align: center;
+	}
+	h2{
+		font-size: 2rem;
+		text-align: center;
+	}
 	.bio-container {
 	  background: rgb(124, 124, 64);
 	  color: bisque;
+	  text-align: center;
 	}
+
   }
+
+  /* min-width scales up - mobile first */
