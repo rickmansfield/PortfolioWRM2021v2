@@ -196,6 +196,10 @@ img {
   margin: 3%;
   padding: 1%;
 }
+/* #resume-div:hover{
+    transform:scale(1.5);
+    transition: all 0.5s ease-in-out;
+} */
 .bio-container a {
   border-radius: 10%;
   border-style: solid;
@@ -203,10 +207,12 @@ img {
   border-width: 1px;
   margin: 0;
   padding: 0.25%;
+  
 }
 .bio-container a:hover {
   background-color: green;
   color: white;
+
 }
 
 #project-link {
