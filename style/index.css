@@ -118,6 +118,7 @@ a:hover {
 
 header {
   background-color: #444c55;
+  padding-bottom: 1%;
 }
 nav {
   display: flex;
