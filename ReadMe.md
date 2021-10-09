@@ -33,7 +33,7 @@
   
 ## Accessibility 
 
-- __SEMANTIC TAGS__  - are used throughtout this project.
+- __SEMANTIC TAGS__  - The author of this project has visually impared family and hence strongly belives in a responsive design that is inclusive of any "disadvantaged" group. Any conscientious business will limit their views by a large number of potential [visitors having various disabilities](https://www.disabled-world.com/disability/statistics/census-figures.php#:~:text=There%20are%2036%20million%20people%20who%20have%20at,million%20have%20difficulty%20concentrating%2C%20remembering%2C%20or%20making%20decisions.). Thus, semantic tags are used throughtout this project from both personal and professional standpoints.
 
   - A semantic tag in HTML is a tag whose name clearly describes its purpose and its content. HTML5 introduced several new semantic tags. Semantic tags: these clearly define their content.
   
@@ -42,5 +42,6 @@
   ```
   - Non-Semantic examples include:
   ```javascript
-  <div>, <span> <p>
+  <div>, <span>, <a>, <br>
   ``` 
+- ___alt tag___ - The author attempts to give quality brief descriptions in alt tags to every image. 
